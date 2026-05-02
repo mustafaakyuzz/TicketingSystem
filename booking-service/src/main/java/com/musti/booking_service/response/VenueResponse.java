@@ -1,0 +1,19 @@
+package com.musti.booking_service.response;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class VenueResponse {
+    private Long Id;
+    private String name;
+    private String address;
+    private Long totalCapacity;
+}
